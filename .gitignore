@@ -1,0 +1,24 @@
+# Node
+node_modules/
+frontend/node_modules/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build
+dist/
+frontend/dist/
+build/
+
+# Vercel & IDE
+.vercel/
+.vscode/
+.idea/
+
+# Env
+.env
+.env.local
+.env.*.local

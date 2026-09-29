@@ -1,0 +1,75 @@
+2026-02-28 01:48:52,520 [INFO] app: TRUTHSHIELD API initialized
+2026-02-28 01:48:52,529 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-28 01:48:52,530 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-28 01:51:36,573 [INFO] app: TRUTHSHIELD API initialized
+2026-02-28 01:51:36,580 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-28 01:51:36,581 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-28 01:53:49,756 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-28 01:53:49,767 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_40c59b96a2de477f82403eb12c0d891d.mp4
+2026-02-28 01:53:49,767 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-28 01:53:49,768 [ERROR] routes.video_routes: Video analysis failed: predict_video() got an unexpected keyword argument 'frame_interval'
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+TypeError: predict_video() got an unexpected keyword argument 'frame_interval'
+2026-02-28 01:53:49,774 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 01:53:49] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-02-28 01:53:51,702 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-28 01:53:51,713 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_09a1702d1df84184aaeb8b5dd119d8e8.mp4
+2026-02-28 01:53:51,714 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-28 01:53:51,714 [ERROR] routes.video_routes: Video analysis failed: predict_video() got an unexpected keyword argument 'frame_interval'
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+TypeError: predict_video() got an unexpected keyword argument 'frame_interval'
+2026-02-28 01:53:51,720 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 01:53:51] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-02-28 01:53:51,896 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-28 01:53:51,910 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_74c556a2935a442fb4f3da9345dcaab6.mp4
+2026-02-28 01:53:51,911 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-28 01:53:51,911 [ERROR] routes.video_routes: Video analysis failed: predict_video() got an unexpected keyword argument 'frame_interval'
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+TypeError: predict_video() got an unexpected keyword argument 'frame_interval'
+2026-02-28 01:53:51,917 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 01:53:51] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-02-28 01:53:52,038 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-28 01:53:52,048 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_c47247c915184384a1ede62f544843c6.mp4
+2026-02-28 01:53:52,049 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-28 01:53:52,049 [ERROR] routes.video_routes: Video analysis failed: predict_video() got an unexpected keyword argument 'frame_interval'
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+TypeError: predict_video() got an unexpected keyword argument 'frame_interval'
+2026-02-28 01:53:52,053 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 01:53:52] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-02-28 02:05:42,410 [INFO] app: TRUTHSHIELD API initialized
+2026-02-28 02:05:42,430 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-28 02:05:42,430 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-28 02:13:14,658 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:13:14] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:13:28,370 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:13:28] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:15:49,106 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:15:49] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:22:44,975 [INFO] app: TRUTHSHIELD API initialized
+2026-02-28 02:22:44,986 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-28 02:22:44,987 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-28 02:23:08,527 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:23:08] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:33:54,834 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:33:54] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:34:11,386 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:34:11] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-28 02:47:36,557 [INFO] werkzeug: 127.0.0.1 - - [28/Feb/2026 02:47:36] "POST /api/analyze-video HTTP/1.1" 200 -

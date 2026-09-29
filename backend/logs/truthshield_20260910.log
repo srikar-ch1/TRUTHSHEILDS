@@ -1,0 +1,103 @@
+2026-09-10 12:21:25,836 [INFO] app: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 12:25:51,439 [INFO] app: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 12:28:44,651 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 12:28:44,697 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.2:5000
+2026-09-10 12:28:44,698 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-09-10 12:28:44,701 [INFO] werkzeug:  * Restarting with stat
+2026-09-10 12:28:46,676 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 12:28:46,684 [WARNING] werkzeug:  * Debugger is active!
+2026-09-10 12:28:46,705 [INFO] werkzeug:  * Debugger PIN: 146-011-158
+2026-09-10 12:28:55,129 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:28:55] "GET /health HTTP/1.1" 200 -
+2026-09-10 12:28:55,133 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:28:55] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-10 12:28:55,155 [INFO] routes.url_routes: === URL analysis request: https://secure-bank-login.xyz/account ===
+2026-09-10 12:28:55,428 [INFO] routes.url_routes: URL analysis complete | url=https://secure-bank-login.xyz/account | threat=55.0 | risk=Suspicious | time=0.273s
+2026-09-10 12:28:55,429 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:28:55] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-10 12:28:55,434 [INFO] routes.text_routes: === Text analysis request: 157 chars ===
+2026-09-10 12:28:55,437 [INFO] routes.text_routes: Text analysis complete | chars=157 | credibility=85.0 | risk=Credible | time=0.004s
+2026-09-10 12:28:55,438 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:28:55] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-10 12:29:18,317 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:29:18] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-10 12:34:24,044 [ERROR] routes.video_routes: Video analysis requested but AI pipeline not available
+2026-09-10 12:34:24,068 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:34:24] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 503 -
+2026-09-10 12:39:33,402 [INFO] routes.url_routes: === URL analysis request: https://www.amazon.in/ ===
+2026-09-10 12:39:33,996 [INFO] routes.url_routes: URL analysis complete | url=https://www.amazon.in/ | threat=0.0 | risk=Safe | time=0.609s
+2026-09-10 12:39:34,000 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:39:33] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-10 12:40:12,758 [INFO] routes.text_routes: === Text analysis request: 418 chars ===
+2026-09-10 12:40:12,764 [INFO] routes.text_routes: Text analysis complete | chars=418 | credibility=73.0 | risk=Credible | time=0.024s
+2026-09-10 12:40:12,766 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 12:40:12] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-10 23:27:38,771 [INFO] app: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 23:36:14,397 [INFO] app: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 23:37:13,929 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 23:37:14,009 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.2:5000
+2026-09-10 23:37:14,009 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-09-10 23:37:14,012 [INFO] werkzeug:  * Restarting with stat
+2026-09-10 23:37:15,185 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 23:37:15,196 [WARNING] werkzeug:  * Debugger is active!
+2026-09-10 23:37:15,200 [INFO] werkzeug:  * Debugger PIN: 146-011-158
+2026-09-10 23:37:46,540 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:46] "GET /health HTTP/1.1" 200 -
+2026-09-10 23:37:46,543 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:46] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-10 23:37:46,545 [INFO] routes.url_routes: === URL analysis request: https://secure-bank-login.xyz/account ===
+2026-09-10 23:37:46,834 [INFO] routes.url_routes: URL analysis complete | url=https://secure-bank-login.xyz/account | threat=75.0 | risk=Dangerous | time=0.288s
+2026-09-10 23:37:46,834 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:46] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-10 23:37:46,840 [INFO] routes.text_routes: === Text analysis request: 157 chars ===
+2026-09-10 23:37:46,845 [INFO] routes.text_routes: Text analysis complete | chars=157 | credibility=85.0 | risk=Credible | time=0.005s
+2026-09-10 23:37:46,845 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:46] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-10 23:37:46,856 [INFO] routes.audio_routes: === Audio analysis request received: test_tone.wav ===
+2026-09-10 23:37:46,856 [INFO] routes.audio_routes: Starting AI inference pipeline...
+2026-09-10 23:37:46,863 [INFO] routes.audio_routes: Audio saved to temp: C:\Users\Srikar\AppData\Local\Temp\truthshield_audio_5a5e12b1af43440e832103b6328f14cd.wav
+2026-09-10 23:37:46,863 [INFO] routes.audio_routes: Converting to mel spectrogram and running AI inference...
+2026-09-10 23:37:53,947 [INFO] models.audio_model: predict_audio completed: auth=38.5, scam=61.5, time=7.08s, pitch=1.00, spectral=0.55, mfcc=0.15
+2026-09-10 23:37:53,947 [INFO] routes.audio_routes: AI inference complete: authenticity=38.5, scam=61.5, time=7.08s
+2026-09-10 23:37:53,949 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:53] "POST /api/analyze-audio HTTP/1.1" 200 -
+2026-09-10 23:37:54,040 [INFO] routes.video_routes: === Video analysis request: test_clip.mp4 ===
+2026-09-10 23:37:54,042 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-10 23:37:54,087 [ERROR] routes.video_routes: Video analysis failed: module 'cv2' has no attribute 'CascadeClassifier'
+Traceback (most recent call last):
+  File "C:\Users\Srikar\Downloads\Truthsheilds-main\Truthsheilds-main\backend\routes\video_routes.py", line 139, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+  File "C:\Users\Srikar\Downloads\Truthsheilds-main\Truthsheilds-main\backend\models\deepfake_model.py", line 220, in predict_video
+    faces = _detect_faces(frame)
+  File "C:\Users\Srikar\Downloads\Truthsheilds-main\Truthsheilds-main\backend\models\deepfake_model.py", line 32, in _detect_faces
+    cascade = _get_face_cascade()
+  File "C:\Users\Srikar\Downloads\Truthsheilds-main\Truthsheilds-main\backend\models\deepfake_model.py", line 26, in _get_face_cascade
+    _face_cascade = cv2.CascadeClassifier(cascade_path)
+                    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'cv2' has no attribute 'CascadeClassifier'
+2026-09-10 23:37:54,091 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:37:54] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-09-10 23:38:58,260 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Srikar\\Downloads\\Truthsheilds-main\\Truthsheilds-main\\backend\\models\\deepfake_model.py', reloading
+2026-09-10 23:38:58,681 [INFO] werkzeug:  * Restarting with stat
+2026-09-10 23:39:00,050 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-10 23:39:00,063 [WARNING] werkzeug:  * Debugger is active!
+2026-09-10 23:39:00,065 [INFO] werkzeug:  * Debugger PIN: 146-011-158
+2026-09-10 23:39:32,789 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:32] "GET /health HTTP/1.1" 200 -
+2026-09-10 23:39:32,794 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:32] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-10 23:39:32,798 [INFO] routes.url_routes: === URL analysis request: https://secure-bank-login.xyz/account ===
+2026-09-10 23:39:32,882 [INFO] routes.url_routes: URL analysis complete | url=https://secure-bank-login.xyz/account | threat=75.0 | risk=Dangerous | time=0.084s
+2026-09-10 23:39:32,882 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:32] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-10 23:39:32,885 [INFO] routes.text_routes: === Text analysis request: 157 chars ===
+2026-09-10 23:39:32,886 [INFO] routes.text_routes: Text analysis complete | chars=157 | credibility=85.0 | risk=Credible | time=0.002s
+2026-09-10 23:39:32,887 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:32] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-10 23:39:32,893 [INFO] routes.audio_routes: === Audio analysis request received: test_tone.wav ===
+2026-09-10 23:39:32,893 [INFO] routes.audio_routes: Starting AI inference pipeline...
+2026-09-10 23:39:32,895 [INFO] routes.audio_routes: Audio saved to temp: C:\Users\Srikar\AppData\Local\Temp\truthshield_audio_e8119af0277e4b1d91f005c4fcab9a74.wav
+2026-09-10 23:39:32,895 [INFO] routes.audio_routes: Converting to mel spectrogram and running AI inference...
+2026-09-10 23:39:33,850 [INFO] models.audio_model: predict_audio completed: auth=38.5, scam=61.5, time=0.95s, pitch=1.00, spectral=0.55, mfcc=0.15
+2026-09-10 23:39:33,850 [INFO] routes.audio_routes: AI inference complete: authenticity=38.5, scam=61.5, time=0.95s
+2026-09-10 23:39:33,852 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:33] "POST /api/analyze-audio HTTP/1.1" 200 -
+2026-09-10 23:39:33,888 [INFO] routes.video_routes: === Video analysis request: test_clip.mp4 ===
+2026-09-10 23:39:33,891 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-10 23:39:34,044 [INFO] models.deepfake_model: predict_video completed: auth=75.3, frames=15, time=0.15s, stability=70.8, faces_found=6
+2026-09-10 23:39:34,044 [INFO] routes.video_routes: Inference complete | authenticity=75.3 | frames=15 | time=0.15s | stability=70.8
+2026-09-10 23:39:34,147 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:39:34] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-10 23:41:30,735 [INFO] routes.text_routes: === Text analysis request: 360 chars ===
+2026-09-10 23:41:30,738 [INFO] routes.text_routes: Text analysis complete | chars=360 | credibility=88.0 | risk=Credible | time=0.003s
+2026-09-10 23:41:30,743 [INFO] werkzeug: 127.0.0.1 - - [10/Sep/2026 23:41:30] "POST /api/analyze-text HTTP/1.1" 200 -

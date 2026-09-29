@@ -1,0 +1,125 @@
+2026-09-11 07:50:29,154 [INFO] app: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-11 07:51:43,219 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-11 07:51:43,271 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.101.2:5000
+2026-09-11 07:51:43,271 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-09-11 07:51:43,275 [INFO] werkzeug:  * Restarting with stat
+2026-09-11 07:51:44,478 [INFO] __main__: TRUTHSHIELD API v2.0.0 initialized — capabilities: video, audio, url, text
+2026-09-11 07:51:44,489 [WARNING] werkzeug:  * Debugger is active!
+2026-09-11 07:51:44,494 [INFO] werkzeug:  * Debugger PIN: 146-011-158
+2026-09-11 07:51:50,208 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:50] "GET /health HTTP/1.1" 200 -
+2026-09-11 07:51:55,670 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:55] "GET /health HTTP/1.1" 200 -
+2026-09-11 07:51:55,672 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:55] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-11 07:51:55,675 [INFO] routes.url_routes: === URL analysis request: https://secure-bank-login.xyz/account ===
+2026-09-11 07:51:55,899 [INFO] routes.url_routes: URL analysis complete | url=https://secure-bank-login.xyz/account | threat=75.0 | risk=Dangerous | time=0.225s
+2026-09-11 07:51:55,900 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:55] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-11 07:51:55,905 [INFO] routes.text_routes: === Text analysis request: 157 chars ===
+2026-09-11 07:51:55,908 [INFO] routes.text_routes: Text analysis complete | chars=157 | credibility=85.0 | risk=Credible | time=0.003s
+2026-09-11 07:51:55,910 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:55] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 07:51:55,915 [INFO] routes.audio_routes: === Audio analysis request received: test_tone.wav ===
+2026-09-11 07:51:55,916 [INFO] routes.audio_routes: Starting AI inference pipeline...
+2026-09-11 07:51:55,919 [INFO] routes.audio_routes: Audio saved to temp: C:\Users\Srikar\AppData\Local\Temp\truthshield_audio_1eb3647115734965ab635d3148f39732.wav
+2026-09-11 07:51:55,919 [INFO] routes.audio_routes: Converting to mel spectrogram and running AI inference...
+2026-09-11 07:51:57,783 [INFO] models.audio_model: predict_audio completed: auth=38.5, scam=61.5, time=1.86s, pitch=1.00, spectral=0.55, mfcc=0.15
+2026-09-11 07:51:57,784 [INFO] routes.audio_routes: AI inference complete: authenticity=38.5, scam=61.5, time=1.86s
+2026-09-11 07:51:57,784 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:57] "POST /api/analyze-audio HTTP/1.1" 200 -
+2026-09-11 07:51:57,849 [INFO] routes.video_routes: === Video analysis request: test_clip.mp4 ===
+2026-09-11 07:51:57,851 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 07:51:57,972 [INFO] models.deepfake_model: predict_video completed: auth=75.3, frames=15, time=0.12s, stability=70.8, faces_found=6
+2026-09-11 07:51:57,972 [INFO] routes.video_routes: Inference complete | authenticity=75.3 | frames=15 | time=0.12s | stability=70.8
+2026-09-11 07:51:58,076 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:51:58] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 07:53:57,102 [INFO] routes.url_routes: === URL analysis request: https://paypa1-secure.xyz/loginhttp://paypa1-secure.xyz/login ===
+2026-09-11 07:53:58,731 [INFO] routes.url_routes: URL analysis complete | url=https://paypa1-secure.xyz/loginhttp://paypa1-secure.xyz/login | threat=75.0 | risk=Dangerous | time=1.908s
+2026-09-11 07:53:59,121 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:53:59] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-11 07:55:07,226 [INFO] routes.text_routes: === Text analysis request: 258 chars ===
+2026-09-11 07:55:07,255 [INFO] routes.text_routes: Text analysis complete | chars=258 | credibility=8.0 | risk=Likely Misinformation | time=0.031s
+2026-09-11 07:55:07,258 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:55:07] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 07:55:42,305 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:55:42] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-11 07:55:42,328 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:55:42] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-11 07:55:57,314 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:55:57] "GET /api/system-metrics HTTP/1.1" 200 -
+2026-09-11 07:58:10,773 [INFO] routes.video_routes: === Video analysis request: generate_a_sample_video.mp4 ===
+2026-09-11 07:58:10,800 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 07:58:15,072 [INFO] models.deepfake_model: predict_video completed: auth=76.2, frames=20, time=4.27s, stability=22.0, faces_found=12
+2026-09-11 07:58:15,087 [INFO] routes.video_routes: Inference complete | authenticity=76.2 | frames=20 | time=4.27s | stability=22.0
+2026-09-11 07:58:15,227 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:58:15] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 07:58:49,172 [INFO] routes.audio_routes: === Audio analysis request received: sample_test_audio.wav ===
+2026-09-11 07:58:49,173 [INFO] routes.audio_routes: Starting AI inference pipeline...
+2026-09-11 07:58:49,182 [INFO] routes.audio_routes: Audio saved to temp: C:\Users\Srikar\AppData\Local\Temp\truthshield_audio_5fa6ab70188a45cba6f0ffb1e3d2358c.wav
+2026-09-11 07:58:49,183 [INFO] routes.audio_routes: Converting to mel spectrogram and running AI inference...
+2026-09-11 07:58:49,822 [INFO] models.audio_model: predict_audio completed: auth=17.3, scam=82.7, time=0.64s, pitch=1.00, spectral=0.55, mfcc=1.00
+2026-09-11 07:58:49,824 [INFO] routes.audio_routes: AI inference complete: authenticity=17.3, scam=82.7, time=0.64s
+2026-09-11 07:58:49,827 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:58:49] "POST /api/analyze-audio HTTP/1.1" 200 -
+2026-09-11 07:59:28,381 [INFO] routes.url_routes: === URL analysis request: https://google.com ===
+2026-09-11 07:59:28,752 [INFO] routes.url_routes: URL analysis complete | url=https://google.com | threat=0.0 | risk=Safe | time=0.372s
+2026-09-11 07:59:28,753 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:59:28] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-11 07:59:32,218 [INFO] routes.url_routes: === URL analysis request: https://paypa1-secure.xyz/login ===
+2026-09-11 07:59:32,411 [INFO] routes.url_routes: URL analysis complete | url=https://paypa1-secure.xyz/login | threat=75.0 | risk=Dangerous | time=0.193s
+2026-09-11 07:59:32,412 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:59:32] "POST /api/analyze-url HTTP/1.1" 200 -
+2026-09-11 07:59:43,482 [INFO] routes.video_routes: === Video analysis request: generate_a_sample_video.mp4 ===
+2026-09-11 07:59:43,508 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 07:59:48,537 [INFO] models.deepfake_model: predict_video completed: auth=76.2, frames=20, time=5.03s, stability=22.0, faces_found=12
+2026-09-11 07:59:48,557 [INFO] routes.video_routes: Inference complete | authenticity=76.2 | frames=20 | time=5.03s | stability=22.0
+2026-09-11 07:59:48,681 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 07:59:48] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 07:59:56,885 [INFO] routes.video_routes: === Video analysis request: generate_a_sample_video.mp4 ===
+2026-09-11 07:59:56,909 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 08:00:01,960 [INFO] models.deepfake_model: predict_video completed: auth=76.2, frames=20, time=5.05s, stability=22.0, faces_found=12
+2026-09-11 08:00:01,975 [INFO] routes.video_routes: Inference complete | authenticity=76.2 | frames=20 | time=5.05s | stability=22.0
+2026-09-11 08:00:02,103 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:00:02] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 08:02:14,162 [INFO] routes.video_routes: === Video analysis request: generate_a_sample_video.mp4 ===
+2026-09-11 08:02:14,201 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 08:02:19,308 [INFO] models.deepfake_model: predict_video completed: auth=76.2, frames=20, time=5.11s, stability=22.0, faces_found=12
+2026-09-11 08:02:19,315 [INFO] routes.video_routes: Inference complete | authenticity=76.2 | frames=20 | time=5.11s | stability=22.0
+2026-09-11 08:02:19,439 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:02:19] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 08:03:08,547 [INFO] routes.video_routes: === Video analysis request: Recording 2026-09-11 080151.mp4 ===
+2026-09-11 08:03:08,563 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-09-11 08:03:10,366 [INFO] models.deepfake_model: predict_video completed: auth=82.4, frames=20, time=1.80s, stability=68.3, faces_found=12
+2026-09-11 08:03:10,371 [INFO] routes.video_routes: Inference complete | authenticity=82.4 | frames=20 | time=1.80s | stability=68.3
+2026-09-11 08:03:10,483 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:03:10] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-09-11 08:05:24,317 [INFO] routes.audio_routes: === Audio analysis request received: sample_test_audio.wav ===
+2026-09-11 08:05:24,318 [INFO] routes.audio_routes: Starting AI inference pipeline...
+2026-09-11 08:05:24,324 [INFO] routes.audio_routes: Audio saved to temp: C:\Users\Srikar\AppData\Local\Temp\truthshield_audio_22594619162f4b9ea53cccf779377306.wav
+2026-09-11 08:05:24,325 [INFO] routes.audio_routes: Converting to mel spectrogram and running AI inference...
+2026-09-11 08:05:24,928 [INFO] models.audio_model: predict_audio completed: auth=17.3, scam=82.7, time=0.60s, pitch=1.00, spectral=0.55, mfcc=1.00
+2026-09-11 08:05:24,930 [INFO] routes.audio_routes: AI inference complete: authenticity=17.3, scam=82.7, time=0.60s
+2026-09-11 08:05:24,935 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:05:24] "POST /api/analyze-audio HTTP/1.1" 200 -
+2026-09-11 08:06:30,524 [INFO] routes.text_routes: === Text analysis request: 103 chars ===
+2026-09-11 08:06:30,529 [INFO] routes.text_routes: Text analysis complete | chars=103 | credibility=70.0 | risk=Credible | time=0.007s
+2026-09-11 08:06:30,531 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:06:30] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:07,500 [INFO] routes.text_routes: === Text analysis request: 416 chars ===
+2026-09-11 08:07:07,502 [INFO] routes.text_routes: Text analysis complete | chars=416 | credibility=71.0 | risk=Credible | time=0.003s
+2026-09-11 08:07:07,503 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:07] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:10,894 [INFO] routes.text_routes: === Text analysis request: 416 chars ===
+2026-09-11 08:07:10,898 [INFO] routes.text_routes: Text analysis complete | chars=416 | credibility=71.0 | risk=Credible | time=0.004s
+2026-09-11 08:07:10,901 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:10] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:12,521 [INFO] routes.text_routes: === Text analysis request: 416 chars ===
+2026-09-11 08:07:12,522 [INFO] routes.text_routes: Text analysis complete | chars=416 | credibility=71.0 | risk=Credible | time=0.002s
+2026-09-11 08:07:12,523 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:12] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:13,822 [INFO] routes.text_routes: === Text analysis request: 416 chars ===
+2026-09-11 08:07:13,826 [INFO] routes.text_routes: Text analysis complete | chars=416 | credibility=71.0 | risk=Credible | time=0.004s
+2026-09-11 08:07:13,828 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:13] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:20,894 [INFO] routes.text_routes: === Text analysis request: 360 chars ===
+2026-09-11 08:07:20,895 [INFO] routes.text_routes: Text analysis complete | chars=360 | credibility=88.0 | risk=Credible | time=0.001s
+2026-09-11 08:07:20,898 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:20] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:25,235 [INFO] routes.text_routes: === Text analysis request: 258 chars ===
+2026-09-11 08:07:25,237 [INFO] routes.text_routes: Text analysis complete | chars=258 | credibility=8.0 | risk=Likely Misinformation | time=0.002s
+2026-09-11 08:07:25,239 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:25] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:28,960 [INFO] routes.text_routes: === Text analysis request: 293 chars ===
+2026-09-11 08:07:28,963 [INFO] routes.text_routes: Text analysis complete | chars=293 | credibility=27.0 | risk=Likely Misinformation | time=0.003s
+2026-09-11 08:07:28,965 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:28] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:07:35,674 [INFO] routes.text_routes: === Text analysis request: 416 chars ===
+2026-09-11 08:07:35,675 [INFO] routes.text_routes: Text analysis complete | chars=416 | credibility=71.0 | risk=Credible | time=0.018s
+2026-09-11 08:07:35,675 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:07:35] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:10:32,952 [INFO] routes.text_routes: === Text analysis request: 379 chars ===
+2026-09-11 08:10:32,953 [INFO] routes.text_routes: Text analysis complete | chars=379 | credibility=70.0 | risk=Credible | time=0.001s
+2026-09-11 08:10:32,956 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:10:32] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:11:41,988 [INFO] routes.text_routes: === Text analysis request: 912 chars ===
+2026-09-11 08:11:41,992 [INFO] routes.text_routes: Text analysis complete | chars=912 | credibility=70.0 | risk=Credible | time=0.012s
+2026-09-11 08:11:41,993 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:11:41] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:12:36,220 [INFO] routes.text_routes: === Text analysis request: 200 chars ===
+2026-09-11 08:12:36,221 [INFO] routes.text_routes: Text analysis complete | chars=200 | credibility=74.0 | risk=Credible | time=0.001s
+2026-09-11 08:12:36,222 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:12:36] "POST /api/analyze-text HTTP/1.1" 200 -
+2026-09-11 08:14:20,781 [INFO] routes.text_routes: === Text analysis request: 618 chars ===
+2026-09-11 08:14:20,782 [INFO] routes.text_routes: Text analysis complete | chars=618 | credibility=52.0 | risk=Questionable | time=0.003s
+2026-09-11 08:14:20,785 [INFO] werkzeug: 127.0.0.1 - - [11/Sep/2026 08:14:20] "POST /api/analyze-text HTTP/1.1" 200 -

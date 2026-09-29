@@ -1,0 +1,69 @@
+2026-02-22 17:37:37,817 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:37:37,817 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:37:37,828 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:37:37,834 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:37:41,909 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\utils\\__init__.py', reloading
+2026-02-22 17:37:42,278 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:37:42,279 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:37:42,284 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:37:42,289 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:37:45,366 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\models\\audio_model.py', reloading
+2026-02-22 17:37:45,732 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:37:45,733 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:37:45,740 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:37:45,744 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:37:46,778 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\models\\audio_model.py', reloading
+2026-02-22 17:37:47,129 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:37:47,130 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:37:47,137 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:37:47,142 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:38:14,569 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\models\\audio_model.py', reloading
+2026-02-22 17:38:14,939 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:38:14,939 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:38:14,946 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:38:14,950 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:41:29,088 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\audio_routes.py', reloading
+2026-02-22 17:41:29,429 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:41:29,430 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:41:29,436 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:41:29,440 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:46:12,918 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\models\\deepfake_model.py', reloading
+2026-02-22 17:46:13,333 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:46:13,333 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:46:13,340 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:46:13,345 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:46:23,540 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\models\\deepfake_model.py', reloading
+2026-02-22 17:46:23,930 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:46:23,930 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:46:23,938 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:46:23,943 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:48:23,770 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\video_routes.py', reloading
+2026-02-22 17:48:24,167 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:48:24,168 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:48:24,175 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:48:24,180 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:48:33,330 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\audio_routes.py', reloading
+2026-02-22 17:48:33,675 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:48:33,676 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:48:33,689 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:48:33,695 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:48:41,867 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\audio_routes.py', reloading
+2026-02-22 17:48:42,237 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:48:42,237 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:48:42,246 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:48:42,251 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:48:53,438 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\audio_routes.py', reloading
+2026-02-22 17:48:53,863 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:48:53,864 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:48:53,871 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:48:53,878 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:52:54,234 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\utils\\scan_stats.py', reloading
+2026-02-22 17:52:54,632 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:52:54,632 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:52:54,647 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:52:54,653 [INFO] werkzeug:  * Debugger PIN: 125-157-186
+2026-02-22 17:58:12,466 [INFO] werkzeug:  * Detected change in 'C:\\Users\\rvbal\\truthshield\\backend\\routes\\video_routes.py', reloading
+2026-02-22 17:58:12,909 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-22 17:58:12,910 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-22 17:58:12,918 [WARNING] werkzeug:  * Debugger is active!
+2026-02-22 17:58:12,923 [INFO] werkzeug:  * Debugger PIN: 125-157-186

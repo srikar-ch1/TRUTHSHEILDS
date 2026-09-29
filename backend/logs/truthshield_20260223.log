@@ -1,0 +1,78 @@
+2026-02-23 06:45:49,856 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 06:45:49,856 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 06:45:49,909 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.141:5000
+2026-02-23 06:45:49,910 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 06:45:49,911 [INFO] werkzeug:  * Restarting with stat
+2026-02-23 06:45:52,495 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 06:45:52,495 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 06:45:52,498 [WARNING] werkzeug:  * Debugger is active!
+2026-02-23 06:45:52,500 [INFO] werkzeug:  * Debugger PIN: 108-630-345
+2026-02-23 06:45:55,091 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:45:55] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-23 06:46:03,524 [INFO] werkzeug: 192.168.31.141 - - [23/Feb/2026 06:46:03] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-23 06:47:51,696 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 06:47:51,696 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 06:47:51,712 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.141:5000
+2026-02-23 06:47:51,712 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 06:47:51,713 [INFO] werkzeug:  * Restarting with stat
+2026-02-23 06:47:54,400 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 06:47:54,401 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 06:47:54,404 [WARNING] werkzeug:  * Debugger is active!
+2026-02-23 06:47:54,406 [INFO] werkzeug:  * Debugger PIN: 108-630-345
+2026-02-23 06:47:54,436 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:47:54] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-23 06:48:38,797 [INFO] app: TRUTHSHIELD API initialized
+2026-02-23 06:48:38,810 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-23 06:48:38,814 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 06:49:20,181 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:49:20] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-23 06:50:30,460 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:50:30] "GET /health HTTP/1.1" 200 -
+2026-02-23 06:50:30,527 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:50:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-23 06:57:33,395 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-23 06:57:33,405 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_f298cb572e5e497eaa926b3977f80b68.mp4
+2026-02-23 06:57:33,405 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-23 06:57:57,726 [INFO] models.deepfake_model: Deepfake model loaded on CPU (singleton)
+2026-02-23 06:57:59,706 [INFO] models.deepfake_model: Video inference: score=44.7, frames=20, time=26.30s, stability=94.1, heatmap=True
+2026-02-23 06:57:59,710 [INFO] routes.video_routes: AI inference complete: score=44.7, frames=20, time=26.30s, stability=94.1
+2026-02-23 06:57:59,939 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:57:59] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-23 06:59:38,306 [INFO] routes.video_routes: === Video analysis request received: videoplayback.mp4 ===
+2026-02-23 06:59:38,317 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_26a6582d98ab49cea50c1fd94c2d0e07.mp4
+2026-02-23 06:59:38,318 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-23 06:59:39,295 [INFO] models.deepfake_model: Video inference: score=43.0, frames=20, time=0.98s, stability=81.8, heatmap=True
+2026-02-23 06:59:39,295 [INFO] routes.video_routes: AI inference complete: score=43.0, frames=20, time=0.98s, stability=81.8
+2026-02-23 06:59:39,400 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 06:59:39] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-23 07:03:39,309 [INFO] routes.video_routes: === Video analysis request received: WhatsApp Video 2026-02-23 at 7.03.08 AM.mp4 ===
+2026-02-23 07:03:39,333 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_eb027e84858446e7a9cb724b6bd3e9a9.mp4
+2026-02-23 07:03:39,333 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-23 07:03:41,319 [INFO] models.deepfake_model: Video inference: score=50.8, frames=20, time=1.98s, stability=88.2, heatmap=True
+2026-02-23 07:03:41,319 [INFO] routes.video_routes: AI inference complete: score=50.8, frames=20, time=1.98s, stability=88.2
+2026-02-23 07:03:41,427 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 07:03:41] "POST /api/analyze-video HTTP/1.1" 200 -
+2026-02-23 09:23:23,168 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 09:23:23,169 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 09:23:23,225 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.6:5000
+2026-02-23 09:23:23,225 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 09:23:23,228 [INFO] werkzeug:  * Restarting with stat
+2026-02-23 09:23:27,921 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-23 09:23:27,922 [INFO] __main__: Starting TRUTHSHIELD API on port 5000 (debug=True)
+2026-02-23 09:23:27,930 [WARNING] werkzeug:  * Debugger is active!
+2026-02-23 09:23:27,938 [INFO] werkzeug:  * Debugger PIN: 108-630-345
+2026-02-23 09:23:28,028 [INFO] werkzeug: 127.0.0.1 - - [23/Feb/2026 09:23:28] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-23 09:23:59,228 [INFO] app: TRUTHSHIELD API initialized
+2026-02-23 09:23:59,251 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-23 09:23:59,252 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 09:24:44,698 [INFO] app: TRUTHSHIELD API initialized
+2026-02-23 09:24:44,712 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-23 09:24:44,712 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-23 09:48:50,770 [INFO] app: TRUTHSHIELD API initialized
+2026-02-23 09:48:50,779 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-23 09:48:50,779 [INFO] werkzeug: [33mPress CTRL+C to quit[0m

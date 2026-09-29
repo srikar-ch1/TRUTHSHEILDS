@@ -1,0 +1,88 @@
+2026-02-26 19:26:03,373 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-26 19:26:03,408 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.141:5000
+2026-02-26 19:26:03,411 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-02-26 19:26:03,416 [INFO] werkzeug:  * Restarting with stat
+2026-02-26 19:26:13,680 [INFO] __main__: TRUTHSHIELD API initialized
+2026-02-26 19:26:13,686 [WARNING] werkzeug:  * Debugger is active!
+2026-02-26 19:26:13,691 [INFO] werkzeug:  * Debugger PIN: 108-630-345
+2026-02-26 19:26:38,046 [INFO] werkzeug: 127.0.0.1 - - [26/Feb/2026 19:26:38] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-26 19:26:49,538 [INFO] werkzeug: 127.0.0.1 - - [26/Feb/2026 19:26:49] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-26 19:26:59,247 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-26 19:26:59,256 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_114a09c820dd4e2190a9407c191cb940.mp4
+2026-02-26 19:26:59,256 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-26 19:27:03,618 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-02-26 19:27:04,026 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:04,402 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:04,756 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-02-26 19:27:05,303 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:05,719 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:06,141 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:06,617 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:06,860 [ERROR] routes.video_routes: Video analysis failed: The paging file is too small for this operation to complete. (os error 1455)
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+  File "C:\Users\rvbal\truthshield\backend\models\deepfake_model.py", line 47, in predict_video
+    _load_model()
+    ~~~~~~~~~~~^^
+  File "C:\Users\rvbal\truthshield\backend\models\deepfake_model.py", line 31, in _load_model
+    _model = AutoModelForImageClassification.from_pretrained(MODEL_NAME)
+  File "D:\truthshield_venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\truthshield_venv\Lib\site-packages\transformers\modeling_utils.py", line 4072, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\truthshield_venv\Lib\site-packages\transformers\modeling_utils.py", line 4179, in _load_pretrained_model
+    file_pointer = safe_open(file, framework="pt", device="cpu")
+OSError: The paging file is too small for this operation to complete. (os error 1455)
+2026-02-26 19:27:06,932 [INFO] werkzeug: 127.0.0.1 - - [26/Feb/2026 19:27:06] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
+2026-02-26 19:27:19,170 [INFO] routes.video_routes: === Video analysis request received: AI_Video_Generation_Request_Fulfilled.mp4 ===
+2026-02-26 19:27:19,181 [INFO] routes.video_routes: Video saved to temp: C:\Users\rvbal\AppData\Local\Temp\truthshield_6fd1627b18d6474ea37216736bc6b421.mp4
+2026-02-26 19:27:19,182 [INFO] routes.video_routes: Extracting frames and running AI inference...
+2026-02-26 19:27:19,788 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-02-26 19:27:20,397 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:20,832 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:21,297 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-02-26 19:27:21,728 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:22,010 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:22,401 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/dima806/deepfake_vs_real_image_detection/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-26 19:27:22,872 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dima806/deepfake_vs_real_image_detection/29e4cf9efc543845610045f6ba7e88e5cf9d9301/config.json "HTTP/1.1 200 OK"
+2026-02-26 19:27:22,952 [ERROR] routes.video_routes: Video analysis failed: The paging file is too small for this operation to complete. (os error 1455)
+Traceback (most recent call last):
+  File "C:\Users\rvbal\truthshield\backend\routes\video_routes.py", line 124, in analyze_video
+    result = predict_video(
+        video_path,
+        frame_interval=30,
+        max_frames=20,
+    )
+  File "C:\Users\rvbal\truthshield\backend\models\deepfake_model.py", line 47, in predict_video
+    _load_model()
+    ~~~~~~~~~~~^^
+  File "C:\Users\rvbal\truthshield\backend\models\deepfake_model.py", line 31, in _load_model
+    _model = AutoModelForImageClassification.from_pretrained(MODEL_NAME)
+  File "D:\truthshield_venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\truthshield_venv\Lib\site-packages\transformers\modeling_utils.py", line 4072, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\truthshield_venv\Lib\site-packages\transformers\modeling_utils.py", line 4179, in _load_pretrained_model
+    file_pointer = safe_open(file, framework="pt", device="cpu")
+OSError: The paging file is too small for this operation to complete. (os error 1455)
+2026-02-26 19:27:22,961 [INFO] werkzeug: 127.0.0.1 - - [26/Feb/2026 19:27:22] "[35m[1mPOST /api/analyze-video HTTP/1.1[0m" 500 -
